@@ -1,5 +1,5 @@
 
-var table = document.getElementById('inputMatrixTable');
+var table = document.getElementById('inputMatrixTable_A');
 var oneRow = "<tr></tr>"
 
 function changeMatrix() {
@@ -12,7 +12,7 @@ function changeMatrix() {
         var oneRow = "<tr>";
         for (var e = 0; e < selectCol; e++) {
             var ee = e+1
-            oneRow += "<td><input type='text' id='" +"id_matrix_" + ii + ee +"' name='' value='0'></td>"
+            oneRow += "<td><input type='text' id='" +"id_matrix_A" + ii + ee +"' name='' value='0'></td>"
         };
         oneRow += "</tr>"
         item += oneRow
@@ -31,7 +31,8 @@ function MultiMatrixOnNumber()
         inputMatixArray[i] = []
         for (var e = 0; e < selectCol; e++) {
             var ee = e+1
-            idMatix = "id_matrix_" + ii + ee
+            idMatix = "id_matrix_A" + ii + ee
+            // console.log(idMatix)
             inputMatixArray[i].push(Number(document.getElementById(idMatix).value));
         };
 

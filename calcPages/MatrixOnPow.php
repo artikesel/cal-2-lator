@@ -13,7 +13,67 @@
         <?php require_once '../php/header.php'; ?>
 
         <div id="content">
-            <div class="matrixInput" >
+            <div id="matrixInput" >
+                <h1>Возведение матрицы в степень</h1>
+                <div id="matix_A" class="matrixInputCol">
+
+                    <table id="inputMatrixTable_A" class="matrixTable">
+                        <tr>
+                            <td><input id="id_matrix_A11" type="text" name="" value="0"></td>
+                            <td><input id="id_matrix_A12" type="text" name="" value="0"></td>
+                            <td><input id="id_matrix_A13" type="text" name="" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td><input id="id_matrix_A21" type="text" name="" value="0"></td>
+                            <td><input id="id_matrix_A22" type="text" name="" value="0"></td>
+                            <td><input id="id_matrix_A23" type="text" name="" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td><input id="id_matrix_A31" type="text" name="" value="0"></td>
+                            <td><input id="id_matrix_A32" type="text" name="" value="0"></td>
+                            <td><input id="id_matrix_A33" type="text" name="" value="0"></td>
+                        </tr>
+                    </table>
+
+                    <label for="rowMatrix"> Количеств столбцов</label>
+                    <select id="colMatrixInput_A" name="colMatrix"  onchange="changeMatrix()">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option selected value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+
+                    <label for="rowMatrix"> Количеств строк</label>
+                    <select id="rowMatrixInput_A" name="rowMatrix"  onchange="changeMatrix()">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option selected value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+
+                </div>
+
+                <div id="action" class="matrixInputCol">
+                    <input id="yourNumber" type="text" name="" value="0">
+                </div>
+
+
+
+                <div id="execute">
+                    <input type="button" onclick="PowMatrix()" value="Вычислить">
+                </div>
+            </div>
+
+
+
+
+
+
+            <!-- <div class="matrixInput" >
                 <div id="inputMatrixDiv">
                     <table id="inputMatrixTable" class="matrixTable">
                         <tr>
@@ -59,7 +119,7 @@
                 </div>
 
                 <input type="button" onclick="PowMatrix()" value="Вычислить">
-            </div>
+            </div> -->
             <div class="martixOutput">
                 <h1>Результат</h1>
                 <table id="outputMatrixTable">
