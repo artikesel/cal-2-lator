@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond&display=swap');
+*{
+    border: none;
+}
+*:focus{
+    outline: none;
+    border: none;
+}
+body, html{
+    margin: 0;
+    padding: 0;
+    font-family: 'Cormorant Garamond', serif;
+}
+body{
+    background-image: url('../backG.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-y: scroll;
+    position: relative;
+}
+.errorPoPup{
+    display: none;
+    background-color: red;
+    position: absolute;
+    width: 40px;
+    height: 20px;
+    margin: auto;
+    z-index: 9999999999;
+}
+a{
+    text-decoration: none;
+    color: rgb(255, 43, 43);
+}
+footer{
+    width: 100%;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 20px;
+    background-color: white;
+}
+header{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px 10%;
+    background-color: white;
+    position: relative;
+}
+header>a{
+    color: black;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 20px;
+    transition: 0.1s;
+}
+
+header>a:hover{
+    transition: 0.1s;
+    transform: scale(1.08);
+}
+#searchInput:hover {
+    transform: none;
+}
+#searchInput{
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px;
+}
+#searchInput>input[type="text"]{
+    width: 50px;
+    color:black;
+    margin-right: 5px;
+    padding: 5px 10px;
+    background-color: rgb(222, 222, 222);
+    border-radius: 5px;
+    transition: 0.2s;
+}
+#content{
+    /* display: flex; */
+    min-height: 100vh;
+}
+#searchInput>input[type="text"]:focus{
+    transition: 0.2s;
+    width: 150px;
+}
+#searchInput>input[type="submit"]{
+    cursor: pointer;
+    color:black;
+    border-radius: 5px;
+}
+.indexBoxTask{
+    background: linear-gradient(30deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.9));
+    border-radius: 10px;
+    width: 50%;
+    padding: 50px 10%;
+    margin: 10px 15%;
+}
