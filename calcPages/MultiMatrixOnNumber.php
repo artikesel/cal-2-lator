@@ -65,58 +65,6 @@
                 </div>
             </div>
 
-
-
-
-            <!-- <div class="matrixInput" >
-                <div id="inputMatrixDiv">
-                    <table id="inputMatrixTable" class="matrixTable">
-                        <tr>
-                            <td><input id="id_matrix_11" type="text" name="" value="0"></td>
-                            <td><input id="id_matrix_12" type="text" name="" value="0"></td>
-                            <td><input id="id_matrix_13" type="text" name="" value="0"></td>
-                        </tr>
-                        <tr>
-                            <td><input id="id_matrix_21" type="text" name="" value="0"></td>
-                            <td><input id="id_matrix_22" type="text" name="" value="0"></td>
-                            <td><input id="id_matrix_23" type="text" name="" value="0"></td>
-                        </tr>
-                        <tr>
-                            <td><input id="id_matrix_31" type="text" name="" value="0"></td>
-                            <td><input id="id_matrix_32" type="text" name="" value="0"></td>
-                            <td><input id="id_matrix_33" type="text" name="" value="0"></td>
-                        </tr>
-
-                    </table>
-
-                    <input id="yourNumber" type="text" name="" value="0">
-                </div>
-                <div id="selectSize">
-                    <label for="rowMatrix"> Количеств столбцов</label>
-                    <select id="colMatrixInput" name="colMatrix"  onchange="changeMatrix()">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option selected value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                    </select>
-
-                    <label for="rowMatrix"> Количесвто строк</label>
-                    <select id="rowMatrixInput" name="rowMatrix"  onchange="changeMatrix()">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option selected value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                    </select>
-                </div>
-
-                <input type="button" onclick="MultiMatrixOnNumber()" value="Вычислить">
-            </div> -->
-
-
             <div class="martixOutput">
                 <table id="outputMatrixTable">
                     <h1>Результат</h1>
@@ -129,5 +77,6 @@
 
     </div>
     <script src="/JavaScripts/MultiMatrixOnNumber.js" charset="utf-8"></script>
+    <script src="/JavaScripts/JsStyle.js" charset="utf-8"></script>
 </body>
 </html>

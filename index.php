@@ -1,3 +1,4 @@
+
 <!--     in header.php
 <!DOCTYPE html>
 <html lang="ru">
@@ -21,7 +22,7 @@
                 <h3><a href="calcPages/MultiMatrixOnNumber.php">Умножение матрицы на число</a></h3>
                 <h3><a href="calcPages/MultiMatrixOnMatrix.php">Умножение матриц</a></h3>
                 <h3><a href="calcPages/MatrixOnPow.php">Возведение матрицы в степень</a></h3>
-                <h3><a href="calcPages/MatrixDeterminant.php">Определитель матрицы</a></h3>
+                <h3><a href="calcPages/DeterminantMatrix.php">Определитель матрицы</a></h3>
                 <h3><a href="calcPages/MatrixRank.php">Ранг матрицы</a></h3>
                 <h3><a href="calcPages/UnionMatrix.php">Союзная матрица</a></h3>
                 <h3><a href="calcPages/InverseMatrix.php">Обратная матрица</a></h3>
