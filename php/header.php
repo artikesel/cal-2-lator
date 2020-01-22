@@ -20,9 +20,9 @@ echo <<<EOD
 <body>
     <div id="wrapper">
     <header>
-    <a href="/">Главная</a>
-    <a href="aboutUs.php">О нас</a>
-    <a href="donate.php">Поддержать</a>
-    <a id="searchInput"> <input type="text" placeholder="Поиск"> <input type="submit" name="" value="Найти"></a>
+        <a href="/">Главная</a>
+        <a href="aboutUs.php">О нас</a>
+        <a href="donate.php">Поддержать</a>
+        <a id="searchInput"> <input type="text" placeholder="Поиск"> <input type="submit" name="" value="Найти"></a>
+    </header>
 EOD;
-echo "</header>";
