@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond&display=swap');
 *{
     border: none;
+    /* border: 1px solid red; */
 }
 *:focus{
     outline: none;

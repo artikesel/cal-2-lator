@@ -15,7 +15,7 @@
         <div id="content">
 
             <div id="matrixInput" >
-                <h1>Сложение и вычитание матриц</h1>
+                <h1>Умножение матрицы на число</h1>
                 <div id="matix_A" class="matrixInputCol">
 
                     <table id="inputMatrixTable_A" class="matrixTable">
@@ -58,41 +58,17 @@
 
                 </div>
                 <div id="action" class="matrixInputCol">
-                    <select id="symbol" name="">
-                        <option value="+">&plus;</option>
-                        <option value="-">&minus;</option>
-                    </select>
-                </div>
-                <div id="matix_B" class="matrixInputCol">
-
-                    <table id="inputMatrixTable_B" class="matrixTable">
-                        <tr>
-                            <td><input id="id_matrix_B11" type="text" name="" value="0"></td>
-                            <td><input id="id_matrix_B12" type="text" name="" value="0"></td>
-                            <td><input id="id_matrix_B13" type="text" name="" value="0"></td>
-                        </tr>
-                        <tr>
-                            <td><input id="id_matrix_B21" type="text" name="" value="0"></td>
-                            <td><input id="id_matrix_B22" type="text" name="" value="0"></td>
-                            <td><input id="id_matrix_B23" type="text" name="" value="0"></td>
-                        </tr>
-                        <tr>
-                            <td><input id="id_matrix_B31" type="text" name="" value="0"></td>
-                            <td><input id="id_matrix_B32" type="text" name="" value="0"></td>
-                            <td><input id="id_matrix_B33" type="text" name="" value="0"></td>
-                        </tr>
-
-                    </table>
-
-                    <h3>Размеры матриц должны <br> быть одинаковыми</h3>
+                    <input id="yourNumber" type="text" name="" value="0">
                 </div>
                 <div id="execute">
-                    <input type="button" onclick="sumMatrix()" value="Вычислить">
+                    <input type="button" onclick="MultiMatrixOnNumber()" value="Вычислить">
                 </div>
             </div>
 
 
-            <div class="matrixInput" >
+
+
+            <!-- <div class="matrixInput" >
                 <div id="inputMatrixDiv">
                     <table id="inputMatrixTable" class="matrixTable">
                         <tr>
@@ -138,7 +114,9 @@
                 </div>
 
                 <input type="button" onclick="MultiMatrixOnNumber()" value="Вычислить">
-            </div>
+            </div> -->
+
+
             <div class="martixOutput">
                 <table id="outputMatrixTable">
                     <h1>Результат</h1>
