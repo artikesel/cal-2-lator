@@ -75,7 +75,7 @@ function AdjugateMatrix(A)   // Союзная матрица; A - двумер�
 function InverseMatrix(A)   // A - двумерный квадратный массив
 {
     var det = Determinant(A);                // Функцию Determinant см. выше
-    if (det == 0) return false;
+    if (det == 0) return "false";
     var N = A.length, A = AdjugateMatrix(A); // Функцию AdjugateMatrix см. выше
     for (var i = 0; i < N; i++)
      { for (var j = 0; j < N; j++) A[ i ][j] /= det; }
@@ -101,13 +101,13 @@ function getInverseMatrix()
     }
     var A = inputMatixArray
     var B = InverseMatrix(A)
-    // console.log(B)
+    // alert(B)
     var resultTable = document.getElementById('outputMatrixTable');
     var resultCol = B[0].length
     var resultRow = B.length
     resultTable.innerHTML= "";
     var item = "";
-    if (B == false)
+    if (B === "false")
     {
         item = "Матрица вырождена, обратной матрицы не существует"
     }
