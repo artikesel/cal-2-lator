@@ -103,5 +103,6 @@
 
     </div>
     <script src="/JavaScripts/sumMatrix.js" charset="utf-8"></script>
+    <script src="/JavaScripts/JsStyle.js" charset="utf-8"></script>
 </body>
 </html>

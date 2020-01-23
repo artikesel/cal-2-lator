@@ -35,25 +35,25 @@
                         </tr>
                     </table>
 
-                    <label for="rowMatrix"> Количеств столбцов</label>
+                    <label for="rowMatrix"> Количеств столбцов и строк</label>
                     <select id="colMatrixInput_A" name="colMatrix"  onchange="changeMatrix()">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option selected value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
+                        <!-- <option value="1">1</option> -->
+                        <option value="2">2×2</option>
+                        <option selected value="3">3×3</option>
+                        <option value="4">4×4</option>
+                        <option value="5">5×5</option>
+                        <option value="6">6×6</option>
                     </select>
 
-                    <label for="rowMatrix"> Количеств строк</label>
-                    <select id="rowMatrixInput_A" name="rowMatrix"  onchange="changeMatrix()">
+                    <label for="rowMatrix" style="color: silver"> Матрица должна быть квадаратной</label>
+                    <!-- <select id="rowMatrixInput_A" name="rowMatrix"  onchange="changeMatrix()">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option selected value="3">3</option>
                         <option value="4">4</option>
                         <option value="5">5</option>
                         <option value="6">6</option>
-                    </select>
+                    </select> -->
 
                 </div>
 
@@ -67,11 +67,6 @@
                     <input type="button" onclick="PowMatrix()" value="Вычислить">
                 </div>
             </div>
-
-
-
-
-
 
             <!-- <div class="matrixInput" >
                 <div id="inputMatrixDiv">
@@ -123,7 +118,6 @@
             <div class="martixOutput">
                 <h1>Результат</h1>
                 <table id="outputMatrixTable">
-
                 </table>
             </div>
 
@@ -133,5 +127,6 @@
 
     </div>
     <script src="/JavaScripts/MatrixOnPow.js" charset="utf-8"></script>
+    <script src="/JavaScripts/JsStyle.js" charset="utf-8"></script>
 </body>
 </html>
