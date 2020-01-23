@@ -1,17 +1,19 @@
 var table = document.getElementById('inputMatrixTable_A');
 var oneRow = "<tr></tr>"
+var attr = "onfocus='focusInput(this)' onblur='blurInput(this)'"
 
 function changeMatrix() {
     table.innerHTML= "";
     var item = "";
     var selectCol = document.getElementById('colMatrixInput_A').value;
-    var selectRow = document.getElementById('rowMatrixInput_A').value;
+    // var selectRow = document.getElementById('rowMatrixInput_A').value;
+    var selectRow = selectCol;
     for (var i = 0; i < selectRow; i++) {
         var ii = i+1
         var oneRow = "<tr>";
         for (var e = 0; e < selectCol; e++) {
             var ee = e+1
-            oneRow += "<td><input type='text' id='" +"id_matrix_A" + ii + ee +"' name='' value='0'></td>"
+            oneRow += "<td><input type='text' id='" +"id_matrix_A" + ii + ee +"' name='' "+ attr +" value='0' ></td>"
         };
         oneRow += "</tr>"
         item += oneRow
@@ -37,12 +39,8 @@ function MultiplyMatrix(A,B)
 
 function MatrixPow(n,A)
 {
-    if (n==0) {
-
-    } else {
-        if (n == 1) return A;     // Функцию MultiplyMatrix см. выше
-        else return MultiplyMatrix( A, MatrixPow(n-1,A) );
-    }
+    if (n == 1) return A;     // Функцию MultiplyMatrix см. выше
+    else return MultiplyMatrix( A, MatrixPow(n-1,A) );
 
 }
 
@@ -51,7 +49,8 @@ function PowMatrix()
 {
     inputMatixArray = []
     var selectCol = document.getElementById('colMatrixInput_A').value;
-    var selectRow = document.getElementById('rowMatrixInput_A').value;
+    // var selectRow = document.getElementById('rowMatrixInput_A').value;
+    var selectRow = selectCol;
     for (var i = 0; i < selectRow; i++) {
         var ii = i+1
         inputMatixArray[i] = []
@@ -65,9 +64,10 @@ function PowMatrix()
     A = inputMatixArray
     n = document.querySelector('#yourNumber').value
 
-    if (Number(n)> 1 ) {
-        var B = MatrixPow(n,A)
 
+    if (Number(n)> 1 ) {
+        // alert(A+" "+n)
+        var B = MatrixPow(n,A)
         var resultTable = document.getElementById('outputMatrixTable');
         var resultCol = B[0].length
         var resultRow = B.length

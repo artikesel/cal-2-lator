@@ -15,7 +15,7 @@
         <div id="content">
 
             <div id="matrixInput" >
-                <h1>Транспонирование матриц</h1>
+                <h1>Ранг матрицы</h1>
                 <div id="matrix" class="matrixInputCol">
 
                     <table id="inputMatrixTable_A" class="matrixTable">
@@ -38,15 +38,15 @@
 
                     <label for="rowMatrix"> Количеств столбцов</label>
                     <select id="colMatrixInput" name="colMatrix"  onchange="changeMatrix()">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option selected value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
+                        <!-- <option value="1">1</option> -->
+                        <option value="2">2×2</option>
+                        <option selected value="3">3×3</option>
+                        <option value="4">4×4</option>
+                        <option value="5">5×5</option>
+                        <option value="6">6×6</option>
                     </select>
 
-                    <label for="rowMatrix"> Количеств строк</label>
+                    <!-- <label for="rowMatrix"> Количеств строк</label>
                     <select id="rowMatrixInput" name="rowMatrix"  onchange="changeMatrix()">
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -54,7 +54,7 @@
                         <option value="4">4</option>
                         <option value="5">5</option>
                         <option value="6">6</option>
-                    </select>
+                    </select> -->
 
                 </div>
                 <!-- <div id="action" class="matrixInputCol">
@@ -65,7 +65,7 @@
                 </div> -->
 
                 <div id="execute">
-                    <input type="button" onclick="TransMatrix()" value="Вычислить">
+                    <input type="button" onclick="getRank()" value="Вычислить">
                 </div>
             </div>
 
@@ -130,7 +130,7 @@
         <?php require_once '../php/footer.php'; ?>
 
     </div>
-    <script src="/JavaScripts/transMatrix.js" charset="utf-8"></script>
+    <script src="/JavaScripts/MatrixRank.js" charset="utf-8"></script>
     <script src="/JavaScripts/JsStyle.js" charset="utf-8"></script>
 </body>
 </html>

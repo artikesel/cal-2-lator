@@ -1,6 +1,7 @@
 
 var table = document.getElementById('inputMatrixTable_A');
 var oneRow = "<tr></tr>"
+var attr = "onfocus='focusInput(this)' onblur='blurInput(this)'"
 
 function changeMatrix() {
     table.innerHTML= "";
@@ -12,7 +13,7 @@ function changeMatrix() {
         var oneRow = "<tr>";
         for (var e = 0; e < selectCol; e++) {
             var ee = e+1
-            oneRow += "<td><input type='text' id='" +"id_matrix_A" + ii + ee +"' name='' value='0'></td>"
+            oneRow += "<td><input type='text' id='" +"id_matrix_A" + ii + ee +"' name='' "+ attr +" value='0'></td>"
         };
         oneRow += "</tr>"
         item += oneRow
